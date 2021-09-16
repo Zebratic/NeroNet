@@ -23,3 +23,12 @@ C:\Users\alex7\Desktop\Work\NeroNet\NeroClient\obj\Debug\NeroClient.csproj.Gener
 C:\Users\alex7\Desktop\Work\NeroNet\NeroClient\obj\Debug\NeroClient.csproj.CoreCompileInputs.cache
 C:\Users\alex7\Desktop\Work\NeroNet\NeroClient\obj\Debug\NeroClient.exe
 C:\Users\alex7\Desktop\Work\NeroNet\NeroClient\obj\Debug\NeroClient.pdb
+D:\Work\NeroNet\NeroNet\bin\Debug\NeroClient.exe.config
+D:\Work\NeroNet\NeroNet\bin\Debug\NeroClient.exe
+D:\Work\NeroNet\NeroNet\bin\Debug\NeroClient.pdb
+D:\Work\NeroNet\NeroClient\obj\Debug\NeroClient.csprojAssemblyReference.cache
+D:\Work\NeroNet\NeroClient\obj\Debug\NeroClient.csproj.GenerateResource.cache
+D:\Work\NeroNet\NeroClient\obj\Debug\NeroClient.csproj.CoreCompileInputs.cache
+D:\Work\NeroNet\NeroClient\obj\Debug\NeroClient.exe
+D:\Work\NeroNet\NeroClient\obj\Debug\NeroClient.pdb
+D:\Work\NeroNet\NeroClient\obj\Debug\NeroClient.Forms.Nero.resources

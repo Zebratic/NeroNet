@@ -14,7 +14,7 @@ namespace NeroClient
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InitialForm());
+            Application.Run(new Nero());
         }
     }
 }

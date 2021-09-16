@@ -26,3 +26,17 @@ C:\Users\alex7\Desktop\Work\NeroNet\NeroNet\obj\Debug\NeroNet.csproj.CoreCompile
 C:\Users\alex7\Desktop\Work\NeroNet\NeroNet\obj\Debug\NeroNet.csproj.CopyComplete
 C:\Users\alex7\Desktop\Work\NeroNet\NeroNet\obj\Debug\NeroNet.exe
 C:\Users\alex7\Desktop\Work\NeroNet\NeroNet\obj\Debug\NeroNet.pdb
+D:\Work\NeroNet\NeroNet\bin\Debug\NeroNet.exe.config
+D:\Work\NeroNet\NeroNet\bin\Debug\NeroNet.exe
+D:\Work\NeroNet\NeroNet\bin\Debug\NeroNet.pdb
+D:\Work\NeroNet\NeroNet\bin\Debug\dnlib.dll
+D:\Work\NeroNet\NeroNet\bin\Debug\dnlib.xml
+D:\Work\NeroNet\NeroNet\obj\Debug\NeroNet.csprojAssemblyReference.cache
+D:\Work\NeroNet\NeroNet\obj\Debug\NeroNet.Properties.Resources.resources
+D:\Work\NeroNet\NeroNet\obj\Debug\NeroNet.Main.resources
+D:\Work\NeroNet\NeroNet\obj\Debug\NeroNet.RemoteShell.resources
+D:\Work\NeroNet\NeroNet\obj\Debug\NeroNet.csproj.GenerateResource.cache
+D:\Work\NeroNet\NeroNet\obj\Debug\NeroNet.csproj.CoreCompileInputs.cache
+D:\Work\NeroNet\NeroNet\obj\Debug\NeroNet.csproj.CopyComplete
+D:\Work\NeroNet\NeroNet\obj\Debug\NeroNet.exe
+D:\Work\NeroNet\NeroNet\obj\Debug\NeroNet.pdb

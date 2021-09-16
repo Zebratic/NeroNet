@@ -33,7 +33,8 @@ namespace NeroNet
         {
             txtSettingsIP.Text = Utils.GetLocalIPAddress();
             nudSettingsPort.Maximum = 65353;
-            nudSettingsPort.Value = 1337;
+            nudSettingsPort.Value = 13370;
+            TempDataHelper.CanUpload = true;
         }
 
         public static string GetSubstringByString(string a, string b, string c)

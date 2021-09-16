@@ -1,6 +1,6 @@
 ﻿namespace NeroClient.Forms
 {
-    partial class InitialForm
+    partial class Nero
     {
         /// <summary>
         /// Required designer variable.
