@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using NeroClient.Forms;
+using System.Threading;
 
 namespace NeroClient
 {
